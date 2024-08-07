@@ -1,0 +1,44 @@
+{
+  "name": "@websqnl/data-store",
+  "version": "0.0.1",
+  "description": "Browser Database",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "private": false,
+  "scripts": {
+    "cp:package": "cp package.json dist/",
+    "cp:readme": "cp README.md dist/",
+    "build": "tsc -p tsconfig.json && npm run cp:package && npm run cp:readme",
+    "dev": "npx tsc -p tsconfig.json --watch",
+    "test": "jest"
+  },
+  "type": "module",
+  "keywords": [
+    "localstorage",
+    "indexeddb",
+    "database",
+    "browser",
+    "client",
+    "store",
+    "data",
+    "db"
+  ],
+  "author": {
+    "name": "Guilherme Siquinelli",
+    "email": "email@guiseek.dev",
+    "url": "https://guiseek.dev"
+  },
+  "repository": {
+    "url": "https://github.com/websqnl/data-store",
+    "type": "git"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^29.5.12",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "ts-jest": "^29.2.4",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.4"
+  }
+}
